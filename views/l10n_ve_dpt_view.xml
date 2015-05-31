@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+        
+    <record model="ir.ui.view" id="view_estado_form">
+        <field name="name">estado.form</field>
+        <field name="model">estado</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Estado">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="estado" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_estado_tree">
+        <field name="name">estado.tree</field>
+        <field name="model">estado</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Estado">
+                <field name="codigo"/>
+                <field name="estado"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_estado">
+        <field name="name">estado</field>
+        <field name="res_model">estado</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+        
+    <record model="ir.ui.view" id="view_municipio_form">
+        <field name="name">municipio.form</field>
+        <field name="model">municipio</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="municipio">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="municipio" select="2"/>
+                <field name="estado_id" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_municipio_tree">
+        <field name="name">municipio.tree</field>
+        <field name="model">municipio</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="municipio">
+                <field name="codigo"/>
+                <field name="municipio"/>
+                <field name="estado_id"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_municipio">
+        <field name="name">municipio</field>
+        <field name="res_model">municipio</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+        
+    <record model="ir.ui.view" id="view_parroquia_form">
+        <field name="name">parroquia.form</field>
+        <field name="model">parroquia</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="parroquia">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="parroquia" select="2"/>
+                <field name="municipio_id" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_parroquia_tree">
+        <field name="name">parroquia.tree</field>
+        <field name="model">parroquia</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="parroquia">
+                <field name="codigo"/>
+                <field name="parroquia"/>
+                <field name="municipio_id"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_parroquia">
+        <field name="name">parroquia</field>
+        <field name="res_model">parroquia</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+</data>
+</openerp>
