@@ -579,9 +579,9 @@
 		<field name="estado_id" ref="geo_est_COJ"/>
 	</record>
 
-	<record id="geo_mun_COJ_SAC" model="municipio">
-		<field name="codigo">SAC</field>
-		<field name="municipio">San Carlos</field>
+	<record id="geo_mun_COJ_EZZ" model="municipio">
+		<field name="codigo">EZZ</field>
+		<field name="municipio">Ezequiel Zamora</field>
 		<field name="estado_id" ref="geo_est_COJ"/>
 	</record>
 

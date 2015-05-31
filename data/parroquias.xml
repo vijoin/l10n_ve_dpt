@@ -1854,19 +1854,19 @@
 	<record id="geo_par_COJ_SAC_SCA" model="parroquia">
 		<field name="codigo">SCA</field>
 		<field name="parroquia">San Carlos De Austria</field>
-		<field name="municipio_id" ref="geo_mun_COJ_SAC"/>
+		<field name="municipio_id" ref="geo_mun_COJ_EZZ"/>
 	</record>
 
 	<record id="geo_par_COJ_SAC_JAB" model="parroquia">
 		<field name="codigo">JAB</field>
 		<field name="parroquia">Juan Angel Bravo</field>
-		<field name="municipio_id" ref="geo_mun_COJ_SAC"/>
+		<field name="municipio_id" ref="geo_mun_COJ_EZZ"/>
 	</record>
 
 	<record id="geo_par_COJ_SAC_MMA" model="parroquia">
 		<field name="codigo">MMA</field>
 		<field name="parroquia">Manuel Manrique</field>
-		<field name="municipio_id" ref="geo_mun_COJ_SAC"/>
+		<field name="municipio_id" ref="geo_mun_COJ_EZZ"/>
 	</record>
 
 	<record id="geo_par_COJ_TIN_GJL" model="parroquia">
