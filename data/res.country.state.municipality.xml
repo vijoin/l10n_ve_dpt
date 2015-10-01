@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-	<data noupdate="1">
+	<data noupdate="0">
 	  
 	<!-- Municipios -->
 	<record id="mun_ve_AMA_ATA" model="res.country.state.municipality">
@@ -624,7 +624,7 @@
 	<record id="mun_ve_DTO_LIB" model="res.country.state.municipality">
 		<field name="code">LIB</field>
 		<field name="name">Libertador</field>
-		<field name="state_id" ref="est_ve_DTO"/>
+		<field name="state_id" ref="est_ve_DTC"/>
 	</record>
 
 	<record id="mun_ve_FAL_ACO" model="res.country.state.municipality">
@@ -1266,67 +1266,67 @@
 	<record id="mun_ve_NVA_ADC" model="res.country.state.municipality">
 		<field name="code">ADC</field>
 		<field name="name">Antolín Del Campo</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_NVA_ARI" model="res.country.state.municipality">
 		<field name="code">ARI</field>
 		<field name="name">Arismendi</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_NVA_DIA" model="res.country.state.municipality">
 		<field name="code">DIA</field>
 		<field name="name">Díaz</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_NVA_GAR" model="res.country.state.municipality">
 		<field name="code">GAR</field>
 		<field name="name">García</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_NVA_GOM" model="res.country.state.municipality">
 		<field name="code">GOM</field>
 		<field name="name">Gómez</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_NVA_MAN" model="res.country.state.municipality">
 		<field name="code">MAN</field>
 		<field name="name">Maneiro</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_NVA_MAR" model="res.country.state.municipality">
 		<field name="code">MAR</field>
 		<field name="name">Marcano</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_NVA_SMA" model="res.country.state.municipality">
 		<field name="code">SMA</field>
 		<field name="name">Santiago Mariño</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_NVA_PDM" model="res.country.state.municipality">
 		<field name="code">PDM</field>
 		<field name="name">Península De Macanao</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_NVA_TUB" model="res.country.state.municipality">
 		<field name="code">TUB</field>
 		<field name="name">Tubores</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_NVA_VIL" model="res.country.state.municipality">
 		<field name="code">VIL</field>
 		<field name="name">Villalba</field>
-		<field name="state_id" ref="est_ve_NVA"/>
+		<field name="state_id" ref="est_ve_NVE"/>
 	</record>
 
 	<record id="mun_ve_POR_ABL" model="res.country.state.municipality">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-	<data noupdate="1">
+	<data noupdate="0">
 		  
 	<!-- Parroquias -->
 	<record id="par_ve_AMA_ATA_YAP" model="res.country.state.municipality.parish">
