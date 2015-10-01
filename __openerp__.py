@@ -44,6 +44,7 @@ manera que queden disponibles en todos los campos de dirección en modelos deriv
         'data/res.country.state.municipality.xml',
         'data/res.country.state.municipality.parish.xml',
         'views/l10n_ve_dpt_view.xml',
+        'views/res_partner.xml',
     ],
     "update_xml": ['views/l10n_ve_dpt_view.xml'],
     "installable": True
