@@ -30,20 +30,30 @@ from openerp import api, fields, models
 #     estado = fields.Char('Estado',size=30,required=True, help='Nombre del Estado')
 
 
+class CountryState(models.Model):
+    """ Add Municipalities reference in State """
+    _name = 'res.country.state'
+    _inherit = 'res.country.state'
+    _description="Country states"
+
+    municipality_id = fields.One2many('res.country.state.municipality', 'state_id', 'Municipalities in this state')
+
+
 class StateMunicipality(models.Model):
     """States Municipalities"""
-    _description="State municipalities"
     _name = 'res.country.state.municipality'
+    _description="State municipalities"
 
     state_id = fields.Many2one('res.country.state', 'State', required=True, help='Name of the State to which the municipality belongs')
     name = fields.Char('Municipality', required=True, help='Municipality name')
     code = fields.Char('Code', size=3, required=True, help='Municipality code in max. three chars.')
+    parish_id = fields.One2many('res.country.state.municipality.parish', 'municipality_id', 'Parishes in this municipality')
 
 
 class MunicipalityParish(models.Model):
     """States Parishes"""
-    _description="Municipality parishes"
     _name = 'res.country.state.municipality.parish'
+    _description="Municipality parishes"
 
     municipality_id = fields.Many2one('res.country.state.municipality', 'Municipality', help='Name of the Municipality to which the parish belongs')
     name = fields.Char('Parish', required=True, help='Parish name')
