@@ -27,7 +27,7 @@
         "category" : "Bachaco",
         "description": """ Módulo de localización Venezolana """,
         "depends" : ['base'],
-        "init_xml" : ['data/estados.xml','data/municipios.xml','data/parroquias.xml' ],
+        "init_xml" : ['data/res_country_state.xml','data/municipios.xml','data/parroquias.xml' ],
         "demo_xml" : [ ],
         "update_xml" : ['views/l10n_ve_dpt_view.xml'],
         "installable": True
