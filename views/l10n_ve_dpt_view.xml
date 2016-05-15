@@ -2,7 +2,7 @@
 <openerp>
 <data>
 
-        
+    <!-- Ya no hace falta porque ahora se usa res.country.state    
     <record model="ir.ui.view" id="view_estado_form">
         <field name="name">estado.form</field>
         <field name="model">estado</field>
@@ -34,7 +34,7 @@
         <field name="res_model">estado</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-    </record>
+    </record>-->
 
         
     <record model="ir.ui.view" id="view_municipio_form">
@@ -45,8 +45,8 @@
             <form string="municipio">
             <group col="4" colspan="2">
                 <field name="codigo" select="1"/>
-                <field name="municipio" select="2"/>
-                <field name="estado_id" select="0"/>
+                <field name="nombre" select="2"/>
+                <field name="res_country_state_id" select="0"/>
 
             </group>
             </form>
@@ -59,8 +59,8 @@
         <field name="arch" type="xml">
             <tree string="municipio">
                 <field name="codigo"/>
-                <field name="municipio"/>
-                <field name="estado_id"/>
+                <field name="nombre"/>
+                <field name="res_country_state_id"/>
 
             </tree>
         </field>
@@ -81,7 +81,7 @@
             <form string="parroquia">
             <group col="4" colspan="2">
                 <field name="codigo" select="1"/>
-                <field name="parroquia" select="2"/>
+                <field name="nombre" select="2"/>
                 <field name="municipio_id" select="0"/>
 
             </group>
@@ -95,7 +95,7 @@
         <field name="arch" type="xml">
             <tree string="parroquia">
                 <field name="codigo"/>
-                <field name="parroquia"/>
+                <field name="nombre"/>
                 <field name="municipio_id"/>
 
             </tree>
@@ -107,6 +107,43 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
+
+    <record model="ir.ui.view" id="view_centros_poblados_form">
+        <field name="name">centros_poblados.form</field>
+        <field name="model">centros_poblados</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="centros_poblados">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="nombre" select="2"/>
+                <field name="parroquia_id" select="2"/>
+            </group>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_centros_poblados_tree">
+        <field name="name">centros_poblados.tree</field>
+        <field name="model">centros_poblados</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="centros_poblados">
+                <field name="codigo"/>
+                <field name="nombre"/>
+                <field name="parroquia_id"/>
+                
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_centros_poblados">
+        <field name="name">centros_poblados</field>
+        <field name="res_model">centros_poblados</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     
 </data>
 </openerp>
