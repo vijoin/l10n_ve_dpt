@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
 	<data noupdate="1">
+
 	<!-- Estados -->
 	<record id="geo_est_AMA" model="res.country.state">
 		<field name="code">AMA</field>
@@ -26,7 +27,6 @@
 		<field name="country_id" ref="base.ve"/>
 	</record>
 	
-
 	<record id="geo_est_BAR" model="res.country.state">
 		<field name="code">BAR</field>
 		<field name="name">Barinas</field>
@@ -44,7 +44,6 @@
 		<field name="name">Carabobo</field>
 		<field name="country_id" ref="base.ve"/>
 	</record>
-	  l10n_ve_dpt.geo_est_CAR
 	
 	<record id="geo_est_COJ" model="res.country.state">
 		<field name="code">COJ</field>
