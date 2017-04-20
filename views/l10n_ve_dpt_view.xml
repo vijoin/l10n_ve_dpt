@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
-<openerp>
-    <data>
-
+<odoo>
         <record id="view_state_filter" model="ir.ui.view">
             <field name="name">res.country.state.filter</field>
             <field name="model">res.country.state</field>
@@ -94,13 +92,11 @@
         </record>
 
         <!-- Submenu for Venezuela Political Territorial Division -->
-        <menuitem id="main_menu_l10n_ve_ptd" name="PTD Venezuela"  parent="base.menu_config"/>
+        <menuitem id="main_menu_l10n_ve_ptd" name="PTD Venezuela"  parent="base.base.menu_administration"/>
         <!-- Entrada de menu para el modelo de res.country.state -->
         <menuitem id="item_states" name="States" parent="main_menu_l10n_ve_ptd" action="action_state"/>
         <!-- Entrada de menu para el modelo de res.country.state.municipality -->
         <menuitem id="item_municipalities" name="Municipalities" parent="main_menu_l10n_ve_ptd" action="action_municipality"/>
         <!-- Entrada de menu para el modelo de res.country.state.municipality.parish -->
         <menuitem id="item_parishes" name="Parishes" parent="main_menu_l10n_ve_ptd" action="action_parish"/>
-
-    </data>
-</openerp>
+</odoo>
