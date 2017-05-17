@@ -8,8 +8,8 @@
             <field name="inherit_id" ref="base.view_partner_form" />
             <field name="arch" type="xml">
                 <field name="country_id" position="before">
-                    <field name="municipality_id" placeholder="Municipality" options='{"no_open": True}' domain="[('state_id','=',state_id)]" attrs="{'readonly': [('use_parent_address','=',True)]}"/>
-                    <field name="parish_id" placeholder="Parish" options='{"no_open": True}' domain="[('municipality_id','=',municipality_id)]" attrs="{'readonly': [('use_parent_address','=',True)]}"/>
+                    <field name="municipality_id" placeholder="Municipality" options='{"no_open": True}' domain="[('state_id','=',state_id)]"/>
+                    <field name="parish_id" placeholder="Parish" options='{"no_open": True}' domain="[('municipality_id','=',municipality_id)]"/>
                 </field>  
             </field>
         </record>
