@@ -92,7 +92,7 @@
         </record>
 
         <!-- Submenu for Venezuela Political Territorial Division -->
-        <menuitem id="main_menu_l10n_ve_ptd" name="PTD Venezuela"  parent="base.base.menu_administration"/>
+        <menuitem id="main_menu_l10n_ve_ptd" name="PTD Venezuela"  parent="base.menu_administration"/>
         <!-- Entrada de menu para el modelo de res.country.state -->
         <menuitem id="item_states" name="States" parent="main_menu_l10n_ve_ptd" action="action_state"/>
         <!-- Entrada de menu para el modelo de res.country.state.municipality -->
